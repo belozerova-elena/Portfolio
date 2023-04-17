@@ -1,0 +1,72 @@
+.project {
+  margin: 40px 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+  }
+  &__container--description {
+    min-width: 170px;
+    padding-right: 10px;
+  }
+  &__container--description-title {
+    font-family: $poppins;
+    font-size: 24px;
+  }
+  &__container--description-links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  &__container--description-links--link {
+    padding-bottom: 10px;
+    color: $dark;
+    transition: 0.2s;
+    &:hover {
+      color: $blue;
+    }
+  }
+  &__container--image {
+    max-width: 800px;
+  }
+  &__container--image-img {
+    width: 100%;
+    border-radius: 15px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .project__container {
+    flex-direction: column-reverse;
+  }
+  .project__container--description {
+    padding: 15px 0 0 0;
+  }
+  .project__container--image {
+    max-width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .project {
+    margin: 30px 0;
+    &__container--description-title {
+      font-size: 20px;
+    }
+  }
+}
+// TECHNOLOGY 
+.technology {
+  padding-top: 30px;
+  &__title {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  &__list-item {
+    padding: 5px 0;
+    list-style-type: none;
+  }
+}

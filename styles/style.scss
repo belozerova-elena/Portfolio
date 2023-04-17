@@ -1,0 +1,60 @@
+@import "variables";
+@import "header";
+@import "project";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $montserrat;
+  font-size: 16px;
+  color: $dark;
+  background-color: $light;
+}
+body::-webkit-scrollbar {
+  width: 14px;
+}
+body::-webkit-scrollbar-track {
+  background: $dark;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $white;
+  border-radius: 20px;
+  border: 2px solid $dark;
+}
+.main {
+  padding: 90px 0;
+  &__title {
+    font-family: $poppins;
+    font-size: 26px;
+    text-align: center;
+    &::before {
+      display: block;
+      content: "";
+      height: 80px;
+      width: 2px;
+      margin: -80px 0 0;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .main {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .main__title {
+    font-size: 22px;
+  }
+}
+// FOOTER 
+.footer {
+  padding: 20px 15px;  
+  background-color: $white;
+  &__text {
+    text-align: center;
+  }
+}

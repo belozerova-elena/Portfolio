@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@500&display=swap");
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #f9f7f7;
+  -webkit-box-shadow: 0 3px 10px rgba(17, 45, 78, 0.2);
+          box-shadow: 0 3px 10px rgba(17, 45, 78, 0.2);
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.header__container-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 400px) {
+  .header__container-title {
+    font-size: 18px;
+  }
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__list-item {
+  margin-left: 15px;
+  list-style-type: none;
+}
+
+.nav__list-item--link {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #112d4e;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav__list-item--link:hover {
+  color: #3f72af;
+}
+
+@media (max-width: 400px) {
+  .nav__list-item {
+    margin-left: 10px;
+  }
+  .nav__list-item--link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 340px) {
+  .nav {
+    display: none;
+  }
+}
+
+.project {
+  margin: 40px 0;
+}
+
+.project__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.project__container--description {
+  min-width: 170px;
+  padding-right: 10px;
+}
+
+.project__container--description-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+}
+
+.project__container--description-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+}
+
+.project__container--description-links--link {
+  padding-bottom: 10px;
+  color: #112d4e;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.project__container--description-links--link:hover {
+  color: #3f72af;
+}
+
+.project__container--image {
+  max-width: 800px;
+}
+
+.project__container--image-img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.project__container--image-img:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  .project__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .project__container--description {
+    padding: 15px 0 0 0;
+  }
+  .project__container--image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .project {
+    margin: 30px 0;
+  }
+  .project__container--description-title {
+    font-size: 20px;
+  }
+}
+
+.technology {
+  padding-top: 30px;
+}
+
+.technology__title {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.technology__list-item {
+  padding: 5px 0;
+  list-style-type: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #112d4e;
+  background-color: #dbe2ef;
+}
+
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #112d4e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f9f7f7;
+  border-radius: 20px;
+  border: 2px solid #112d4e;
+}
+
+.main {
+  padding: 90px 0;
+}
+
+.main__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  text-align: center;
+}
+
+.main__title::before {
+  display: block;
+  content: "";
+  height: 80px;
+  width: 2px;
+  margin: -80px 0 0;
+}
+
+@media (max-width: 900px) {
+  .main {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main__title {
+    font-size: 22px;
+  }
+}
+
+.footer {
+  padding: 20px 15px;
+  background-color: #f9f7f7;
+}
+
+.footer__text {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
