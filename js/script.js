@@ -1,32 +1,24 @@
-const header = document.querySelector(".header");
+const navigation = document.querySelector('.js-nav');
+const toggle = document.querySelector('.js-toggle');
 
-window.onscroll = function () {
-  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-
-  if (scrolled !== 0) {
-    header.style.backgroundColor = "rgba(249, 247, 247, 0.6)";
-  }
-  if (scrolled > 50) {
-    headerHover();
-  }
-  if (scrolled < 50) {
-    headerTop();
-  } else if (scrolled < 30) {
-    header.style.backgroundColor = "#f9f7f7";
-  }
-};
-
-function headerHover() {
-  header.addEventListener("mouseover", function handleMouseOver() {
-    header.style.backgroundColor = "#f9f7f7";
-  });
-  header.addEventListener("mouseout", function handleMouseOut() {
-    header.style.backgroundColor = "rgba(249, 247, 247, 0.6)";
-  });
+toggle.onclick = function(){
+  toggle.classList.toggle('active');
+  navigation.classList.toggle('active');
 }
-function headerTop() {
-  header.addEventListener("mouseout", function handleMouseOver() {
-    header.style.backgroundColor = "#f9f7f7";
-  });
-  header.style.backgroundColor = "#f9f7f7";
+
+const navLinkHtml = document.querySelector('.js-link-html');
+const navLinkJs = document.querySelector('.js-link-js');
+const navLinkReact = document.querySelector('.js-link-react');
+
+navLinkHtml.onclick = function(){
+  toggle.classList.remove('active');
+  navigation.classList.remove('active');
+}
+navLinkJs.onclick = function(){
+  toggle.classList.remove('active');
+  navigation.classList.remove('active');
+}
+navLinkReact.onclick = function(){
+  toggle.classList.remove('active');
+  navigation.classList.remove('active');
 }
